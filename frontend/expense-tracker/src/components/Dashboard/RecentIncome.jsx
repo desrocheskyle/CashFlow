@@ -1,7 +1,8 @@
 import React from 'react';
 import { LuArrowRight } from 'react-icons/lu';
 import TransactionInfoCard from '../Cards/TransactionInfoCard';
-import moment from 'moment';
+import moment from "moment";
+
 
 const RecentIncome = ({ transactions, onSeeMore }) => {
     return (
@@ -20,7 +21,7 @@ const RecentIncome = ({ transactions, onSeeMore }) => {
                         key={item._id}
                         title={item.source}
                         icon={item.icon}
-                        date={moment(item.date).format("Do MMM YYYY")}
+                        date={moment(item.date.split("T")[0]).format("Do MMM YYYY")}
                         amount={item.amount}
                         type="income"
                         hideDeleteBtn

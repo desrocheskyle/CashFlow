@@ -12,7 +12,7 @@ import {
 } from "recharts";
 
 
-const CustomBarChart = ({ data }) => {
+const CustomBarChart = ({ data, xKey }) => {
 
     // Function to alternate colors
     const getBarColor = (index) => {
@@ -41,7 +41,7 @@ const CustomBarChart = ({ data }) => {
                 <BarChart data={data}>
                     <CartesianGrid stroke="none" />
 
-                    <XAxis dataKey="category" tick={{ fontSize: 12, fill: "#555"}} stroke="none" />
+                    <XAxis dataKey={xKey} tick={{ fontSize: 12, fill: "#555"}} stroke="none" />
                     <YAxis tick={{ fontSize: 12, fill: "#555"}} stroke="none" />
 
                     <Tooltip content={<CustomTooltip />} />
