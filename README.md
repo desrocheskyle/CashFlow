@@ -24,7 +24,7 @@ A full-stack personal finance application that allows users to track their incom
 
 1.  **Clone the repository**
     ```bash
-    git clone [https://github.com/desrocheskyle/cashflow.git](https://github.com/desrocheskyle/cashflow.git)
+    git clone https://github.com/desrocheskyle/CashFlow.git
     cd expense-tracker
     ```
 
